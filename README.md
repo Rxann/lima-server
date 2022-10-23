@@ -1,2 +1,3 @@
 # lima-server
- The server for the Lima Telemetry Service
+
+The server for the Lima Telemetry Project

@@ -1,0 +1,22 @@
+{
+  "name": "lima-server",
+  "version": "0.0.0",
+  "description": "The server for the Lima Telemetry Project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rxann/lima-server.git"
+  },
+  "keywords": [
+    "lima"
+  ],
+  "author": "rxan",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Rxann/lima-server/issues"
+  },
+  "homepage": "https://github.com/Rxann/lima-server#readme"
+}
