@@ -5,11 +5,6 @@ const app = express();
 const db = new JSONdb("data.json", { syncOnWrite: true });
 app.use(compression());
 app.post("/add", (req, res) => {
-  if (req.query.loadavg) {
-    var ar = db.get("loadavg");
-    ar.push(req.query.loadavg.toString());
-    db.set("loadavg", ar);
-  }
   if (req.query.totalmem) {
     var ar = db.get("totalmem");
     ar.push(req.query.totalmem);
