@@ -1,7 +1,10 @@
 const express = require("express");
 const compression = require("compression");
 const JSONdb = require("simple-json-db");
+const FileLogger = require("nano-file-logger");
 const app = express();
+const log = new FileLogger("./log.txt");
+
 const db = new JSONdb("data.json", { syncOnWrite: true });
 app.use(compression());
 app.post("/add", (req, res) => {
@@ -20,7 +23,9 @@ app.post("/add", (req, res) => {
     ar.push(req.query.arch);
     db.set("arch", ar);
   }
-  res.status(200).send("Logged");
+  var ip = req.headers["x-forwarded-from"] || req.socket.remoteAddress;
+  log.add(`IP:${ip} Route: /add`);
+  res.status(200).send(Buffer.from("Data Stored and Request Logged!"));
 });
 
 app.get("/avgOS", (req, res) => {
