@@ -7,7 +7,7 @@ app.use(compression());
 app.post("/add", (req, res) => {
   if (req.query.loadavg) {
     var ar = db.get("loadavg");
-    ar.push(req.query.loadavg);
+    ar.push(req.query.loadavg.toString());
     db.set("loadavg", ar);
   }
   if (req.query.totalmem) {
