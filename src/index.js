@@ -1,7 +1,9 @@
 const express = require("express");
+const compression = require("compression");
 const JSONdb = require("simple-json-db");
 const app = express();
 const db = new JSONdb("data.json", { syncOnWrite: true });
+app.use(compression());
 app.post("/add", (req, res) => {
   if (req.query.loadavg) {
     var ar = db.get("loadavg");
@@ -24,20 +26,27 @@ app.post("/add", (req, res) => {
     db.set("arch", ar);
   }
   res.status(200).send("Logged");
-  app.get("/avgOS", (req, res) => {
-    //Darwin,Linux,Windows
-    var results = [];
-    var os = db.get("os");
-    os.map((o) => {
-      if (o == "Darwin") {
-        results[0] = results[0]++;
-      } else if (o == "Linux") {
-        results[1] = results[1]++;
-      } else if (o == "Windows_NT") {
-        results[2] = results[2]++;
-      }
-    });
-    res.status(200).send(results);
-  });
 });
-app.listen(2525);
+
+app.get("/avgOS", (req, res) => {
+  //Darwin,Linux,Windows
+  var results = [];
+  var os = db.get("os");
+  os.map((o) => {
+    if (o == "Darwin") {
+      results[0] = results[0]++;
+    } else if (o == "Linux") {
+      results[1] = results[1]++;
+    } else if (o == "Windows_NT") {
+      results[2] = results[2]++;
+    }
+  });
+  res.status(200).send(results);
+});
+app.get("/", (req, res) => {
+  res.status(200).sendFile(__dirname + "/index.html");
+});
+
+app.listen(5000, () => {
+  console.log("The Lima Telemetry Server is now running...!");
+});
