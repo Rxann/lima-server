@@ -23,5 +23,8 @@
     "express": "^4.18.2",
     "nano-file-logger": "^1.0.5",
     "simple-json-db": "^2.0.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0"
   }
 }
