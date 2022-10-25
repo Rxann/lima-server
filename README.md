@@ -30,6 +30,9 @@ If you find an issue, please open an issue on the repository
 
 If you would like to contribute, you can fork this repository and make your changes. You can then open a PR(Pull request)
 
-## Retreiving Logs / Data
+## Planned Features
 
-** Soon Implemented **
+Authentication
+Log Retriving
+Console and Web Dashboard
+& more!
