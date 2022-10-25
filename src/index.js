@@ -47,6 +47,6 @@ app.get("/", (req, res) => {
   res.status(200).sendFile(__dirname + "/index.html");
 });
 
-app.listen(5000, () => {
+app.listen(2525, () => {
   console.log("The Lima Telemetry Server is now running...!");
 });
