@@ -4,14 +4,14 @@
 
 ## About the project
 
-The Lima Telemetry project is a solution to gathering telemetry data from your customers/clients
+The Lima Telemetry project is a solution to gathering telemetry data from your customers/clients.
 This project is currently in open-beta and will be getting fast updates.
 
 ## How to use
 
-1: Download the latest exe or executable for your operating system from the repositories Release tab
-2:Execute the executable on a server or your own desktop to start the server
-If you are running this on a server, make sure to port forward it
+1: Download the latest exe or executable for your operating system from the repository's Release tab.
+2:Execute the executable on a server or your own desktop to start the server.
+_If you are running this on a server, make sure to port forward it_
 3:Send data to the server using lima-client on your website or app!
 
 _Server operates on port 2525_
