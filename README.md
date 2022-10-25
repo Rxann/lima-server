@@ -13,7 +13,7 @@ This project is currently in open-beta and will be getting fast updates.
 2:Execute the executable on a server or your own desktop to start the server.
 _If you are running this on a server, make sure to port forward it_
 3:Send data to the server using lima-client on your website or app!
-‎
+
 _Server operates on port 2525_
 
 ## Notices
