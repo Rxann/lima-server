@@ -14,13 +14,13 @@ Currently, only Windows, Linux, and macOS executables are published. If you woul
 
 ## How to use
 
-1: Download the latest exe or executable for your operating system from the repository's Release tab.
+1: Download the latest executable for your operating system from the repository's Release tab.
 
-2:Execute the executable on a server or your own desktop to start the server.
+2: Execute the executable on a server or your own desktop to start the server.
 
 _If you are running this on a server, make sure to port forward it_
 
-3:Send data to the server using lima-client on your website or app!
+3: Send data to the server using lima-client on your website or app!
 
 _Server operates on port 2525_
 
