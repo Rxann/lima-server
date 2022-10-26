@@ -8,6 +8,10 @@ The Lima Telemetry project is a solution to gathering telemetry data from your c
 
 This project is currently in open-beta and will be getting fast updates.
 
+## Supported OS
+
+Currently, only Windows, Linux, and macOS executables are published. If you would like another OS possibly supported, please open an issue!
+
 ## How to use
 
 1: Download the latest exe or executable for your operating system from the repository's Release tab.
@@ -19,6 +23,10 @@ _If you are running this on a server, make sure to port forward it_
 3:Send data to the server using lima-client on your website or app!
 
 _Server operates on port 2525_
+
+## Client Libraries
+
+An official lima Javascript library is in development and will be released soon1
 
 ## Notices
 
