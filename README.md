@@ -20,7 +20,7 @@ Currently, only Windows, Linux, and macOS executables are published. If you woul
 
 _If you are running this on a server, make sure to port forward it_
 
-3: Send data to the server using lima-client on your website or app!
+3: Send data to the server using the parameters of os,arch,totalmem or use [lima-client]{https://www.npmjs.com/package/lima-client}
 
 _Server operates on port 2525_
 
