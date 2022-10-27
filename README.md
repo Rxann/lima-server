@@ -2,6 +2,8 @@
 
 # The Lima Telemetry Project
 
+This project is licensed under the GNU GPL-3.0 License
+
 ## About the project
 
 The Lima Telemetry project is a solution to gathering telemetry data from your customers/clients.
